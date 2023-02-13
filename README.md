@@ -7,5 +7,5 @@ This repository serves as a place to store and upload versioned code for turning
 ## Assignments
 
 - intro1: Assigned in class, several basic activities including input and output
-- reversi: Downloaded skeleton of game, goal is to write AI for it.
+- reversi: Downloaded skeleton of game, goal is to write AI for it. | Not written entirely by me
 
