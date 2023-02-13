@@ -66,10 +66,20 @@ def play(board, piece, x, y):
 # -----------------------
 
 def evaluate(board):
-    """Returns an evaluation of the board.
-       A score of zero indicates a neutral position.
-       A positive score indicates that black is winning.
-       A negative score indicates that white is winning."""
+    black = 0
+    white = 0
+    for y in board:
+        for x in y:
+            if not " " and "●":
+                white += 1
+            elif not " " and "○":
+                black += 1
+    if black == white:
+        return 0
+    elif black > white:
+        return black
+    else:
+        return white
 
 def max_moves(board, player):
     """Returns a list of tuples (x, y) representing the moves that have
